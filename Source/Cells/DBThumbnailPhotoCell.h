@@ -21,6 +21,7 @@
 
 #import <UIKit/UIKit.h>
 #import "DBAssetImageView.h"
+#import <Photos/PHImageManager.h>
 
 @interface DBThumbnailPhotoCell : UICollectionViewCell
 
@@ -29,6 +30,7 @@
 
 @property (assign, nonatomic) BOOL needsDisplayEmptySelectedIndicator;
 @property (copy, nonatomic, nullable) NSString *identifier;
+@property (nonatomic) PHImageRequestID phImageRequestID;
 
 @property (assign, nonatomic) CGFloat selectorOffset;
 
